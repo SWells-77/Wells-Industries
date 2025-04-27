@@ -1,0 +1,256 @@
+Index: ../Lab 1/src/SavingsLab1.java
+===================================================================
+diff --git a/../Lab 1/src/SavingsLab1.java b/../Lab 1/src/SavingsLab1.java
+deleted file mode 100644
+--- a/../Lab 1/src/SavingsLab1.java	(revision 1a2c2c6958e9f4cd22457126a0111e368950b928)
++++ /dev/null	(revision 1a2c2c6958e9f4cd22457126a0111e368950b928)
+@@ -1,3 +0,0 @@
+-
+-
+-}
+Index: ../Chapter2/src/Chapter2/Chapter2.java
+===================================================================
+diff --git a/../Chapter2/src/Chapter2/Chapter2.java b/../Chapter2/src/Chapter2/Chapter2.java
+deleted file mode 100644
+--- a/../Chapter2/src/Chapter2/Chapter2.java	(revision 1a2c2c6958e9f4cd22457126a0111e368950b928)
++++ /dev/null	(revision 1a2c2c6958e9f4cd22457126a0111e368950b928)
+@@ -1,25 +0,0 @@
+-package Chapter2;
+-
+-public class Chapter2 {
+-    public static void main(String[] args) {
+-        //declaring a variable;
+-        int yourNumber;
+-
+-        // assign the value 10 to yourNumber;
+-        yourNumber = 10;
+-
+-        System.out.println("yourNumber is :" + yourNumber);
+-
+-        // declare and assign - I like this way
+-        int myFavoriteNumber = 42;
+-
+-        System.out.println("My favorite number is :" + myFavoriteNumber);
+-
+-        double numberWithADecimal = 7.7;
+-
+-        yourNumber = 12;
+-
+-        System.out.println("yourNumber is :" + yourNumber);
+-    }
+-}
+-
+Index: ../NewPC/src/NewPC/newPC.java
+===================================================================
+diff --git a/../NewPC/src/NewPC/newPC.java b/../NewPC/src/NewPC/newPC.java
+deleted file mode 100644
+--- a/../NewPC/src/NewPC/newPC.java	(revision 1a2c2c6958e9f4cd22457126a0111e368950b928)
++++ /dev/null	(revision 1a2c2c6958e9f4cd22457126a0111e368950b928)
+@@ -1,12 +0,0 @@
+-
+-public static void main(String[] args) {
+-        int Price = 2275;
+-        int Savings = 50;
+-        double Weeks = 45.5;
+-
+-        System.out.println("The computer you want costs:" + Price);
+-        System.out.println("You are able to save:" + Savings);
+-        System.out.println("This is how many weeks it will take to save for your computer" + Weeks);
+-    }
+-}
+-
+Index: ../ChptrTwo/ChptrTwo.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ChptrTwo/ChptrTwo.iml b/../ChptrTwo/ChptrTwo.iml
+new file mode 100644
+--- /dev/null	(date 1737925235372)
++++ b/../ChptrTwo/ChptrTwo.iml	(date 1737925235372)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../Week3/Week3.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Week3/Week3.iml b/../Week3/Week3.iml
+new file mode 100644
+--- /dev/null	(date 1737661297918)
++++ b/../Week3/Week3.iml	(date 1737661297918)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../PCSavings/PCSavings.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../PCSavings/PCSavings.iml b/../PCSavings/PCSavings.iml
+new file mode 100644
+--- /dev/null	(date 1737583522595)
++++ b/../PCSavings/PCSavings.iml	(date 1737583522595)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../HelloWorld/HelloWorld.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../HelloWorld/HelloWorld.iml b/../HelloWorld/HelloWorld.iml
+new file mode 100644
+--- /dev/null	(date 1737809218746)
++++ b/../HelloWorld/HelloWorld.iml	(date 1737809218746)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../ChptrTwo/src/chptrtwo/ChptrTwo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ChptrTwo/src/chptrtwo/ChptrTwo.java b/../ChptrTwo/src/chptrtwo/ChptrTwo.java
+new file mode 100644
+--- /dev/null	(date 1738029916930)
++++ b/../ChptrTwo/src/chptrtwo/ChptrTwo.java	(date 1738029916930)
+@@ -0,0 +1,97 @@
++package chptrtwo;
++
++import java.util.Scanner;
++
++public class ChptrTwo {
++    public static void main(String[] args) {
++      int fenceLength = 16;
++      int fenceWidth = 14;
++        System.out.println("The length of the fence is: " + fenceLength );
++        //declare and assign a variable in one step
++        int fenceArea = fenceLength * fenceWidth;
++        System.out.println("The area of the fence is: " + fenceArea);
++
++        // double can hold an int but an int can't hold a double
++
++        double numberWithADecimal = 12.2;
++        System.out.println("Your decimal number is: " + numberWithADecimal);
++        numberWithADecimal = fenceLength;
++        System.out.println("Your number is :" + numberWithADecimal);
++        //Please Excuse My Dear Aunt Sally
++        //Parentheses Exponents Multiplication Division Addition Subtraction
++        System.out.println("What 5 - 2 + 3?");
++        System.out.println(5 - 2 + 3);
++        System.out.println("97% of people cannot figure out this problem: 9 / 3 * 3 + 2");
++        System.out.println(9 /3 * 3 + 2);
++
++        int myFavoriteNumber = 10;
++        int yourFavoriteNumber = 3;
++        myFavoriteNumber = 10 + 2;
++        System.out.println("myFavoriteNumber is: " + myFavoriteNumber);
++        myFavoriteNumber = myFavoriteNumber + 10;
++
++        //combined assignment operator
++        myFavoriteNumber += 10;
++
++        myFavoriteNumber = yourFavoriteNumber * 3 + 6;
++        System.out.println("My favorite number is :" + myFavoriteNumber);
++
++        //not a combined assignment operator - This wil set the value to Positive 10
++        myFavoriteNumber =+ 10;
++
++        myFavoriteNumber = 12;
++
++        //integer division produces integer results-  % is the modulus operator which will produce the remainder
++        System.out.println("5 / 2 == " + 5 / 2 + " with a remainder of : " + 5 % 2);
++
++        //to get a double result from division on of the numbers has to be a decimal number
++        double answer = 5.0 / 2;
++        System.out.println(answer);
++
++        //
++        double myFavoriteNumberDividedByYourFavoriteNumber = (double) myFavoriteNumber / yourFavoriteNumber;
++        System.out.println(myFavoriteNumberDividedByYourFavoriteNumber);
++
++        String firstName ="Steve";
++        String lastName = "Wells";
++
++        System.out.println(firstName + " " + lastName);
++
++        String fullName = firstName + " " + lastName;
++        System.out.println(fullName);
++
++        String stevesFavoriteNumber = fullName + " " + myFavoriteNumber;
++        System.out.println(stevesFavoriteNumber);
++
++        //backslash is the "escape" character- it means the next letter is special
++        System.out.println(" My friend Dan said to me, \"Hello Steve!\"");
++
++        // \n new line - goes down a line
++        System.out.println("New Line == \n \\n");
++
++        // \t is for creating tabs
++      System.out.println("My Coffee Shop");
++      System.out.println("$1 \t     1-Coffee");
++      System.out.println("$2 \t     2-Cafe Mocha");
++      System.out.println("2.5 \t 3-Cafe Latte");
++
++      Scanner keyboard = new Scanner(System.in);
++
++      System.out.println("What is your name?");
++      String name = keyboard.nextLine();
++      System.out.println("Hello there, " + name);
++
++      System.out.println("How many coffees would you like to buy?");
++      // Always recommended Integer.parseInt
++      int coffeesForToday = Integer.parseInt(keyboard.nextLine());
++
++      System.out.println("How much does each coffee cost?");
++      double costofcoffee = Double.parseDouble(keyboard.nextLine());
++      System.out.println("That will cost you $" + coffeesForToday * costofcoffee);
++
++
++
++
++
++    }
++}

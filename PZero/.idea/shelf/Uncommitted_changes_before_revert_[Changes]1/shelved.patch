@@ -1,0 +1,214 @@
+Index: .gitignore
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1738032244148)
++++ b/.gitignore	(date 1738032244148)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1738032244201)
++++ b/.idea/modules.xml	(date 1738032244201)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/PZero.iml" filepath="$PROJECT_DIR$/PZero.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1738032244165)
++++ b/.idea/.gitignore	(date 1738032244165)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ProjectZero.iml
+===================================================================
+diff --git a/ProjectZero.iml b/ProjectZero.iml
+new file mode 100644
+--- /dev/null	(date 1738032244243)
++++ b/ProjectZero.iml	(date 1738032244243)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1738032244183)
++++ b/.idea/misc.xml	(date 1738032244183)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_23_PREVIEW" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/pZero/PZero.java
+===================================================================
+diff --git a/src/pZero/PZero.java b/src/pZero/PZero.java
+new file mode 100644
+--- /dev/null	(date 1738032244278)
++++ b/src/pZero/PZero.java	(date 1738032244278)
+@@ -0,0 +1,74 @@
++package pZero;
++
++import java.util.Scanner;
++
++public class PZero {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        // What is the distance of the length and the width od the fence's area?
++        System.out.print("Enter the length of the fenced area (in feet): ");
++        double length = scanner.nextDouble();
++
++        System.out.print("Enter the width of the fenced area (in feet): ");
++        double width = scanner.nextDouble();
++
++        // How far is the distance between posts?
++        System.out.print("Enter the distance between posts (in feet): ");
++        double postDistance = scanner.nextDouble();
++
++        // Make sure the distance is evenly divisible by the post distance
++        if (length % postDistance != 0 || width % postDistance != 0) {
++            System.out.println("Error: The distance between posts must evenly divide the length and width.");
++            System.out.println("Please run the program again with valid inputs.");
++            return;
++        }
++
++        // How many posts are needed?
++        int postsLength = (int) (length / postDistance) + 1;
++        int postsWidth = (int) (width / postDistance) + 1;
++        int totalPosts = 2 * (postsLength + postsWidth);
++
++        // What is the length of the boards
++        System.out.print("Enter the length of the boards (in feet): ");
++        double boardLength = scanner.nextDouble();
++
++        // Is the board length less than the post distance?
++        if (boardLength < postDistance) {
++            System.out.println("Error: The board length must be greater than or equal to the post distance.");
++            System.out.println("Please run the program again with valid inputs.");
++            return;
++        }
++
++        // How many boards are needed?
++        int boardsPerLength = (int) (length / boardLength);
++        int boardsPerWidth = (int) (width / boardLength);
++        int totalBoards = 2 * (boardsPerLength + boardsPerWidth);
++
++        // How many boards per post?
++        System.out.print("Enter the number of boards per post: ");
++        int boardsPerPost = scanner.nextInt();
++
++        // What is the cost of each post and each board?
++        System.out.print("Enter the cost of each post: ");
++        double postCost = scanner.nextDouble();
++        System.out.print("Enter the cost of each board: ");
++        double boardCost = scanner.nextDouble();
++
++        // What is the total cost?
++        double totalPostCost = totalPosts * postCost;
++        double totalBoardCost = totalBoards * boardsPerPost * boardCost;
++        double grandTotal = totalPostCost + totalBoardCost;
++
++        // Output the results
++        System.out.println("Total number of posts required: " + totalPosts);
++        System.out.println("Total number of boards required: " + totalBoards * boardsPerPost);
++        System.out.println("Total cost of posts: $" + totalPostCost);
++        System.out.println("Total cost of boards: $" + totalBoardCost);
++        System.out.println("Grand total cost: $" + grandTotal);
++
++        scanner.close();
++    }
++}
++
++
+Index: .idea/vcs.xml
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1738032244222)
++++ b/.idea/vcs.xml	(date 1738032244222)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/Main.java
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1738032244261)
++++ b/src/Main.java	(date 1738032244261)
+@@ -0,0 +1,15 @@
++//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
++// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
++public class Main {
++    public static void main(String[] args) {
++        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
++        // to see how IntelliJ IDEA suggests fixing it.
++        System.out.printf("Hello and welcome!");
++
++        for (int i = 1; i <= 5; i++) {
++            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
++            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
++            System.out.println("i = " + i);
++        }
++    }
++}
+\ No newline at end of file

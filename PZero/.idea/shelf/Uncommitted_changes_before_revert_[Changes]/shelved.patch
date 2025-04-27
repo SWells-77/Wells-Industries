@@ -1,0 +1,140 @@
+Index: ../Lab 1/src/SavingsLab1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Lab 1/src/SavingsLab1.java b/../Lab 1/src/SavingsLab1.java
+deleted file mode 100644
+--- a/../Lab 1/src/SavingsLab1.java	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
++++ /dev/null	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
+@@ -1,3 +0,0 @@
+-
+-
+-}
+Index: ../Chapter2/src/Chapter2/Chapter2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Chapter2/src/Chapter2/Chapter2.java b/../Chapter2/src/Chapter2/Chapter2.java
+deleted file mode 100644
+--- a/../Chapter2/src/Chapter2/Chapter2.java	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
++++ /dev/null	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
+@@ -1,25 +0,0 @@
+-package Chapter2;
+-
+-public class Chapter2 {
+-    public static void main(String[] args) {
+-        //declaring a variable;
+-        int yourNumber;
+-
+-        // assign the value 10 to yourNumber;
+-        yourNumber = 10;
+-
+-        System.out.println("yourNumber is :" + yourNumber);
+-
+-        // declare and assign - I like this way
+-        int myFavoriteNumber = 42;
+-
+-        System.out.println("My favorite number is :" + myFavoriteNumber);
+-
+-        double numberWithADecimal = 7.7;
+-
+-        yourNumber = 12;
+-
+-        System.out.println("yourNumber is :" + yourNumber);
+-    }
+-}
+-
+Index: ../NewPC/src/NewPC/newPC.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NewPC/src/NewPC/newPC.java b/../NewPC/src/NewPC/newPC.java
+deleted file mode 100644
+--- a/../NewPC/src/NewPC/newPC.java	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
++++ /dev/null	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
+@@ -1,12 +0,0 @@
+-
+-public static void main(String[] args) {
+-        int Price = 2275;
+-        int Savings = 50;
+-        double Weeks = 45.5;
+-
+-        System.out.println("The computer you want costs:" + Price);
+-        System.out.println("You are able to save:" + Savings);
+-        System.out.println("This is how many weeks it will take to save for your computer" + Weeks);
+-    }
+-}
+-
+Index: ../Lab 1/src/SavingsLab1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Lab 1/src/SavingsLab1.java b/../Lab 1/src/SavingsLab1.java
+deleted file mode 100644
+--- a/../Lab 1/src/SavingsLab1.java	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
++++ /dev/null	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
+@@ -1,3 +0,0 @@
+-
+-
+-}
+Index: ../Chapter2/src/Chapter2/Chapter2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Chapter2/src/Chapter2/Chapter2.java b/../Chapter2/src/Chapter2/Chapter2.java
+deleted file mode 100644
+--- a/../Chapter2/src/Chapter2/Chapter2.java	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
++++ /dev/null	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
+@@ -1,25 +0,0 @@
+-package Chapter2;
+-
+-public class Chapter2 {
+-    public static void main(String[] args) {
+-        //declaring a variable;
+-        int yourNumber;
+-
+-        // assign the value 10 to yourNumber;
+-        yourNumber = 10;
+-
+-        System.out.println("yourNumber is :" + yourNumber);
+-
+-        // declare and assign - I like this way
+-        int myFavoriteNumber = 42;
+-
+-        System.out.println("My favorite number is :" + myFavoriteNumber);
+-
+-        double numberWithADecimal = 7.7;
+-
+-        yourNumber = 12;
+-
+-        System.out.println("yourNumber is :" + yourNumber);
+-    }
+-}
+-
+Index: ../NewPC/src/NewPC/newPC.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NewPC/src/NewPC/newPC.java b/../NewPC/src/NewPC/newPC.java
+deleted file mode 100644
+--- a/../NewPC/src/NewPC/newPC.java	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
++++ /dev/null	(revision 7b272c04d0b865e4761cb1174aaede0021c2a52e)
+@@ -1,12 +0,0 @@
+-
+-public static void main(String[] args) {
+-        int Price = 2275;
+-        int Savings = 50;
+-        double Weeks = 45.5;
+-
+-        System.out.println("The computer you want costs:" + Price);
+-        System.out.println("You are able to save:" + Savings);
+-        System.out.println("This is how many weeks it will take to save for your computer" + Weeks);
+-    }
+-}
+-
